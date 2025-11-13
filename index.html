@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+    <h1>Student Grade Calculator</h1>
+
+        <div id="info">
+            <form>
+                <label for="first">First Name</label>
+                <input type="text" id="first">
+            </form>
+            <form>
+                <label for="last">Last Name</label>
+                <input type="text" id="last">
+            </form>
+	    </div>
+
+        <div id="grade">
+            <h2>Input your grades:</h2>
+                <form>
+                    <label for="sci">Science</label>
+                    <input type="number" id="sci">
+                    <label for="eng">English</label>
+                    <input type="number" id="eng">
+                </form>
+                <form>
+                    <label for="math">Math</label>
+                    <input type="number" id="math">
+                    <label for="filo">Filipino</label>
+                    <input type="number" id="filo">
+                </form>
+                <form>
+                    <label for="ict">ICT</label>
+                    <input type="number" id="ict">
+                    <label for="pe">PE</label>
+                    <input type="number" id="pe">
+                </form>
+<br/>
+            <input type="button" value="Calculate GWA" py-click="average">
+        </div>
+<br/>
+        <div id="output"></div>
+        
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
