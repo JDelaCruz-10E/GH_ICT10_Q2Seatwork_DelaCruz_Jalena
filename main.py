@@ -18,6 +18,15 @@ def average(e):
              float(sub5.value) * sub5.check <=
              float(sub6.value) * sub6.check)
 
+    def pos_or_neg(e):
+        document.getElementById('output1').innerHTML = ''
+        num1 = int(document.getElementById('num1').value)
+
+    if num1 > 75:
+        display(f'You passed', target='output1')
+    else:
+        display(f'You failed', target='output1')
+
     display(f'Name: {first} {last}', target='output')
     display(f'Science: {sub1}', target='output')
     display(f'English: {sub2}', target='output')
@@ -25,4 +34,5 @@ def average(e):
     display(f'Filipino: {sub4}', target='output')
     display(f'ICT: {sub5}', target='output')
     display(f'PE: {sub6}', target='output')
+
     display(f'Your general weighted average is {average}', target='output') 
